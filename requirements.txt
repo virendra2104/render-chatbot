@@ -5,6 +5,7 @@ python-dotenv
 litellm
 openai
 openai-agents
+oauth2client
 
 redis
 
@@ -19,4 +20,5 @@ requests
 gspread
 google-auth
 google-auth-oauthlib
+
 
