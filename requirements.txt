@@ -1,0 +1,16 @@
+fastapi
+uvicorn
+python-dotenv
+
+litellm
+openai
+
+redis
+
+faiss-cpu
+chromadb
+
+tavily-python
+
+pydantic
+requests

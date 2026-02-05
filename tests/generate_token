@@ -1,0 +1,19 @@
+import asyncio
+import sys
+import os
+
+# -------------------------------------------------
+# Add project root to PYTHONPATH
+# -------------------------------------------------
+PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+if PROJECT_ROOT not in sys.path:
+    sys.path.insert(0, PROJECT_ROOT)
+from backend.security.auth import create_access_token
+from backend.config import ACCESS_TOKEN_EXPIRE_SECONDS
+
+token = create_access_token(
+    {"sub": "test-user-1"},
+    ACCESS_TOKEN_EXPIRE_SECONDS
+)
+
+print(token)
