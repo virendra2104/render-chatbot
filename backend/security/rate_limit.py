@@ -4,6 +4,8 @@ from fastapi import HTTPException, status
 
 from backend.config import REDIS_URL, RATE_LIMIT_REQUESTS, RATE_LIMIT_WINDOW
 
+print("DEBUG REDIS_URL =", repr(REDIS_URL))   # 👈 ADD THIS LINE
+
 redis_client = redis.from_url(REDIS_URL, decode_responses=True)
 
 async def rate_limit(identifier: str):
@@ -22,3 +24,4 @@ async def rate_limit(identifier: str):
             status_code=status.HTTP_429_TOO_MANY_REQUESTS,
             detail="Rate limit exceeded",
         )
+
