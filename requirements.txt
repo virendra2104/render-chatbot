@@ -8,6 +8,7 @@ openai-agents
 oauth2client
 
 redis
+python-jose[cryptography]
 
 faiss-cpu
 chromadb
@@ -20,5 +21,6 @@ requests
 gspread
 google-auth
 google-auth-oauthlib
+
 
 
