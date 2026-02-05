@@ -16,3 +16,7 @@ tavily-python
 pydantic
 requests
 
+gspread
+google-auth
+google-auth-oauthlib
+
